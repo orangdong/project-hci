@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="regis.js"></script>
+    <title>Store Del Luna | Register</title>
+</head>
+<body class="bg-body-register">
+        <div class="register-container">
+            
+            <img class="img-register" src="assets/register.svg" alt="illustration">
+            <div class="form-container">
+                <p class="h2">Register</p>
+                <form class="form" action="#" id="form" onSubmit="return(validasi());">
+                    <div class="form-group">
+                        <label class="form-label" for="username">Username</label>
+                        <input id="username" name="username" class="form-text" type="text">
+                    </div>
+                    
+                        <div class="form-group">
+                            <label class="form-label" for="password">Password</label>
+                            <div class="password-input">
+                                <input id="password" name="password" class="form-text" type="password">
+                                <a href="#" class="fa fa-eye-slash icon eye-icon" id="close-eyes" onclick="show_password()"></a>
+                            </div>
+                            
+                        </div>
+                    
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="confirm-password">Confirm Password</label>
+                        <div class="password-input">
+                            <input id="confirm-password" name="confirm-password" class="form-text" type="password">
+                            <a href="#" class="fa fa-eye-slash icon eye-icon" id="close-eyes2" onclick="show_passwordB()"></a>
+                        </div>
+                        
+                    </div>
+                    <div class="form-dual">
+                        <div class="form-group">
+                            <label class="form-label" for="full-name">Full Name</label>
+                            <input id="full-name" name="full-name" class="form-text" type="text">
+                        </div>
+                        <div class="form-group age">
+                            <label class="form-label" for="age">Age</label>
+                            <input id="age" name="age" class="form-text" type="number">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input id="email" name="email" class="form-text" type="text">
+                    </div>
+                    <div class="form-group">
+                        <p class="form-label" for="email">Gender</p>
+                        <div class="radio-group">
+                            <div class="radio">
+                                <input type="radio" name="genders" id="genders" ></input>
+                                <label for="">Male</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="genders" id="genders"></input>
+                                <label for="">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agreement">
+                        <label class="form-label" for="customer-agreement">Customer Agreement</label>
+                        <input id="customer-agreement" name="customer-agreement" class="form-checkbox" type="checkbox">
+                    </div>
+                    <div class="form-button">
+                        <button id="register-btn" type="submit" class="button-primary register-button">Register</button>
+                        <a href="index.html" class="button-secondary register-button">Kembali ke Home</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+            
+</body>
+</html>
