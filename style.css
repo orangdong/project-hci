@@ -39,9 +39,14 @@
     color: #c4c4c4;
     margin-top: -15px
 }
+.user-testi{
+    margin-bottom: 2rem;
+}
 .stars{
+    position: absolute;
+    bottom: 0;
     margin-left: -10px;
-    margin-bottom: -10px;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -322,6 +327,7 @@
     margin-right: 1rem;
     max-width: 200px;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .tagline-section{
