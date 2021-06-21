@@ -109,6 +109,84 @@
     display: none;
 }
 
+.album-collection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-album{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.album-container{
+    background: white;
+    border-radius: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.album-header{
+    margin-bottom: 1rem;
+}
+
+.album-body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rating{
+    color: #0B032D;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 0.5rem;
+}
+
+.album-price{
+    color: #0B032D;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.album-footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid rgba(11, 3, 45, 0.2);
+}
+.album-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #0B032D;
+}
+
+.album-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    color: #c4c4c4;
+    margin-top: -25px;
+}
+.cart-button{
+    width: 100%;
+    border-radius: 100px !important;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .button-primary:hover{
     background-color: #5659A0 !important;
     border: 1px solid #5659A0;
@@ -585,6 +663,9 @@ input[type=radio] {
     }
     .navbar{
         display: none !important;
+    }
+    .album-collection{
+        flex-direction: column;
     }
     .benefits{
         flex-direction: column;

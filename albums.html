@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="album_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -50,9 +51,195 @@
         </nav>
         <!-- content -->
         <div class="content mb-4">
-           
-           
-            
+            <div class="section-third mb-12">
+                
+                
+                <div class="product-slider mx-auto">
+                 <i id="prevButton" class='bx bxs-left-arrow'></i>
+                 <i id="nextButton" class='bx bxs-right-arrow' ></i>
+                 <span class="slider-tag">Best Selling Albums</span>
+              
+                 <a href="" class="slider-tag2"><i class='bx bx-cart-alt cart-icon'></i>Add to Cart</a>
+                    <div class="image-container">
+                        <img class="image-slider first-image active" src="assets/slider/izone1.jpg" alt="iu-slider">
+                        <img class="image-slider" src="assets/slider/nct-slider.png" alt="nct-slider">
+                        <img class="image-slider" src="assets/slider/aespa-slider.png" alt="aespa-slider">
+                        <img class="image-slider" src="assets/slider/gd-slider.png" alt="gd-slider">
+                        <img class="image-slider last-image" src="assets/slider/twice-slider.png" alt="twice-slider">
+                    </div>
+                   
+                </div>
+
+                <center>
+                    <div class="dropdown">
+                        <div>
+                           <button class="dropbtn ">List Artist</button> 
+                           <div class="fa fa-angle-down"></div>
+                        </div>
+                        
+                        <div class="dropdown-content ">
+                            <input type="button" onClick="document.getElementById('BTS').scrollIntoView();" value="BTS">
+                          <input type="button" onClick="document.getElementById('nct').scrollIntoView();" value="NCT">
+                        
+                        </div>
+                    </div>
+                </center>
+                
+             </div>
+           <div class="tagline-section mb-4">
+                <h2 class="h2 mb-2">BTS Popular Albums</h2>     
+           </div>
+           <div id="BTS" class="album-collection">
+               <div class="break">
+                <div class="album-container">
+                    <img class="img-album" src="assets/album/album1.png" alt="">
+                    <div class="album-header">
+                     <p class="album-title">Map of The Soul: 7</p>
+                     <p class="album-subtitle">BTS - 2020</p>
+                    </div>
+                    <div class="album-body">
+                        <div class="rating-container">
+                         <i class='star bx bxs-star'></i>
+                         <p class="rating">4.5</p>
+                        </div>
+                        <p class="album-price">Rp200.000</p>
+                    </div>
+                    <div class="album-footer">
+                     <a class="button-primary cart-button" href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="album-container">
+                 <img class="img-album" src="assets/album/album2.png" alt="">
+                 <div class="album-header">
+                  <p class="album-title">BE</p>
+                  <p class="album-subtitle">BTS - 2020</p>
+                 </div>
+                 <div class="album-body">
+                     <div class="rating-container">
+                      <i class='star bx bxs-star'></i>
+                      <p class="rating">4.7</p>
+                     </div>
+                     <p class="album-price">Rp250.000</p>
+                 </div>
+                 <div class="album-footer">
+                  <a class="button-primary cart-button" href="#">Add to Cart</a>
+                 </div>
+             </div>
+               </div>
+               <div class="break">
+                <div class="album-container">
+                    <img class="img-album" src="assets/album/album3.png" alt="">
+                    <div class="album-header">
+                     <p class="album-title">Map of Soul: Persona</p>
+                     <p class="album-subtitle">BTS - 2018</p>
+                    </div>
+                    <div class="album-body">
+                        <div class="rating-container">
+                         <i class='star bx bxs-star'></i>
+                         <p class="rating">4.3</p>
+                        </div>
+                        <p class="album-price">Rp300.000</p>
+                    </div>
+                    <div class="album-footer">
+                     <a class="button-primary cart-button" href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="album-container">
+                    <img class="img-album" src="assets/album/album4.jpg" alt="">
+                    <div class="album-header">
+                     <p class="album-title">Wings</p>
+                     <p class="album-subtitle">BTS - 2016</p>
+                    </div>
+                    <div class="album-body">
+                        <div class="rating-container">
+                         <i class='star bx bxs-star'></i>
+                         <p class="rating">4.4</p>
+                        </div>
+                        <p class="album-price">Rp280.000</p>
+                    </div>
+                    <div class="album-footer">
+                     <a class="button-primary cart-button" href="#">Add to Cart</a>
+                    </div>
+                </div>
+               </div>
+            </div>
+           <div class="tagline-section mb-4">
+            <h2 class="h2 mb-2">NCT Popular Albums</h2>     
+           </div>
+           <div id="nct" class="album-collection">
+            <div class="break">
+             <div class="album-container">
+                 <img class="img-album" src="assets/album/album5.jpg" alt="">
+                 <div class="album-header">
+                  <p class="album-title">Reload</p>
+                  <p class="album-subtitle">NCT DREAM - 2020</p>
+                 </div>
+                 <div class="album-body">
+                     <div class="rating-container">
+                      <i class='star bx bxs-star'></i>
+                      <p class="rating">4.9</p>
+                     </div>
+                     <p class="album-price">Rp200.000</p>
+                 </div>
+                 <div class="album-footer">
+                  <a class="button-primary cart-button" href="#">Add to Cart</a>
+                 </div>
+             </div>
+             <div class="album-container">
+              <img class="img-album" src="assets/album/album6.jpg" alt="">
+              <div class="album-header">
+               <p class="album-title">Neo Zone</p>
+               <p class="album-subtitle">NCT 127 - 2020</p>
+              </div>
+              <div class="album-body">
+                  <div class="rating-container">
+                   <i class='star bx bxs-star'></i>
+                   <p class="rating">5.0</p>
+                  </div>
+                  <p class="album-price">Rp250.000</p>
+              </div>
+              <div class="album-footer">
+               <a class="button-primary cart-button" href="#">Add to Cart</a>
+              </div>
+          </div>
+            </div>
+            <div class="break">
+             <div class="album-container">
+                 <img class="img-album" src="assets/album/album7.jpg" alt="">
+                 <div class="album-header">
+                  <p class="album-title">NCT Resonance</p>
+                  <p class="album-subtitle">NCT - 2020</p>
+                 </div>
+                 <div class="album-body">
+                     <div class="rating-container">
+                      <i class='star bx bxs-star'></i>
+                      <p class="rating">4.7</p>
+                     </div>
+                     <p class="album-price">Rp400.000</p>
+                 </div>
+                 <div class="album-footer">
+                  <a class="button-primary cart-button" href="#">Add to Cart</a>
+                 </div>
+             </div>
+             <div class="album-container">
+                 <img class="img-album" src="assets/album/album8.jpg" alt="">
+                 <div class="album-header">
+                  <p class="album-title">Limitless</p>
+                  <p class="album-subtitle">NCT 127 - 2017</p>
+                 </div>
+                 <div class="album-body">
+                     <div class="rating-container">
+                      <i class='star bx bxs-star'></i>
+                      <p class="rating">4.5</p>
+                     </div>
+                     <p class="album-price">Rp208.000</p>
+                 </div>
+                 <div class="album-footer">
+                  <a class="button-primary cart-button" href="#">Add to Cart</a>
+                 </div>
+             </div>
+            </div>
+         </div>
         </div>
         <!-- footer -->
         <footer class="footer mb-12">
